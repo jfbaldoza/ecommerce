@@ -17,10 +17,10 @@ import './Navbar.scss'
                     </div>
                 </div>
                 <div className="app__navbar-bottom">
-                    <img src="/shirt.svg" alt="store logo" />
+                    <img src="./shirt.svg" alt="store logo" />
                     <nav>
                         <ul>
-                            <li>HOME</li>
+                            <li className='fromCenter'>HOME</li>
                             <li>ABOUT</li>
                             <li>COLLECTIONS</li>
                             <li>SHOP</li>

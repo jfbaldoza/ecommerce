@@ -1,5 +1,6 @@
 .app__navbar {
     font-family: var(--font-base);
+    position: relative;
 }
 
 .app__navbar-top {
@@ -68,6 +69,7 @@
 
     img {
         width: 5%;
+        cursor: pointer;
     }
 
     ul {
@@ -77,12 +79,12 @@
         gap: 2rem;
     }
 
-    ul li {
+    ul > li {
         text-decoration: none;
         list-style: none;
         text-transform: uppercase;
-        color: #696969;
     }
+
 }
 
 .app__navbar-icon {
@@ -93,5 +95,34 @@
     span {
         font-size: 1.5rem;
         cursor: pointer;
+        transition: all 0.3s;
     }
+
+    span:hover {
+        color: #c61932;
+    }
+}
+
+li {
+    margin-bottom: 10px;
+    color: #696969;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+li::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width .3s;
+}
+
+li:hover {
+    color: #c61932;
+}
+
+li:hover::after {
+    width: 100%;
 }
